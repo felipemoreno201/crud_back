@@ -38,6 +38,12 @@ public class CacheConfiguration {
         return cm -> {
             createCache(cm, com.epico.crud.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, com.epico.crud.repository.UserRepository.USERS_BY_EMAIL_CACHE);
+            createCache(cm, com.epico.crud.domain.Autor.class.getName());
+            createCache(cm, com.epico.crud.domain.Autor.class.getName() + ".libros");
+            createCache(cm, com.epico.crud.domain.Cliente.class.getName());
+            createCache(cm, com.epico.crud.domain.Cliente.class.getName() + ".ventas");
+            createCache(cm, com.epico.crud.domain.Libro.class.getName());
+            createCache(cm, com.epico.crud.domain.Venta.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

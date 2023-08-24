@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230824154150",
+  "dto": "mapstruct",
+  "entityTableName": "venta",
+  "fields": [
+    {
+      "fieldName": "folio",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "subtotal",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "impuesto",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "total",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "name": "Venta",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

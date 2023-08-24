@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20230824154148",
+  "dto": "mapstruct",
+  "entityTableName": "cliente",
+  "fields": [
+    {
+      "fieldName": "razonSocial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "correo",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Cliente",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "javadoc": "A relationship",
+      "otherEntityName": "venta",
+      "relationshipName": "venta",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
